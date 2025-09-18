@@ -1,28 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uygulama Web Sitesi</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            color: #333;
-            text-align: center;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WhiskerSoft — Basit, hızlı ve faydalı uygulamalar</title>
+  <meta name="description" content="WhiskerSoft: HesApp, QiblaFinder ve daha fazlası. Basit, hızlı ve faydalı mobil uygulamalar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Tailwind CDN (builds are fine for GH Pages) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", "Helvetica", "Arial", "sans-serif"] },
+          colors: {
+            brand: {
+              50:  "#f0fdf4",
+              100: "#dcfce7",
+              200: "#bbf7d0",
+              300: "#86efac",
+              400: "#4ade80",
+              500: "#22c55e",
+              600: "#16a34a",
+              700: "#15803d",
+              800: "#166534",
+              900: "#14532d"
+            },
+            ink: {
+              900: "#0B1120",
+              800: "#111827",
+              700: "#1f2937",
+              600: "#374151",
+              500: "#6b7280"
+            }
+          },
+          boxShadow: {
+            soft: "0 10px 30px -12px rgba(0,0,0,0.25)"
+          }
         }
-        h1 {
-            color: #0056b3;
-        }
-        p {
-            font-size: 1.2em;
-        }
-    </style>
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <link rel="icon" href="/favicon.ico" />
+  <meta property="og:title" content="WhiskerSoft" />
+  <meta property="og:description" content="Hızlı, sade ve faydalı uygulamalar." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://whiskersoft.github.io" />
 </head>
-<body>
-    <h1>Whiskersoft Uygulaması</h1>
-    <p>Uygulamamız çok yakında yayında!</p>
-    <p>Daha fazla bilgi için bizi takip edin.</p>
+<body class="bg-white text-ink-800 dark:bg-ink-900 dark:text-white">
+  <!-- Sticky top nav -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-ink-900/60 border-b border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-brand-500 flex items-center justify-center text-white font-extrabold shadow-soft">W</div>
+        <span class="font-bold tracking-tight">WhiskerSoft</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#apps" class="hover:text-brand-600">Uygulamalar</a>
+        <a href="#features" class="hover:text-brand-600">Özellikler</a>
+        <a href="#contact" class="hover:text-brand-600">İletişim</a>
+        <a href="#privacy" class="hover:text-brand-600">Gizlilik</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a href="https://play.google.com/store/apps/developer?id=WhiskerSoft" class="px-3 py-2 text-sm rounded-xl border border-black/10 hover:bg-black/5">Google Play</a>
+        <button id="mode" class="px-3 py-2 text-sm rounded-xl border border-black/10 hover:bg-black/5" title="Tema">
+          <span id="modeLabel">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Basit, hızlı ve <span class="text-brand-600">işe yarar</span> uygulamalar.</h1>
+          <p class="mt-4 text-lg text-ink-600 dark:text-gray-300">Reklamda boğmadan, hızdan ödün vermeden. Hedef net: <span class="font-semibold">gerçek fayda</span>. 🐾</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#apps" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-brand-600 text-white font-semibold shadow-soft hover:bg-brand-700">Uygulamalara Göz At</a>
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-black/10 font-semibold hover:bg-black/5">İletişim</a>
+          </div>
+          <p class="mt-6 text-sm text-ink-500">Android odaklıyız. iOS? Kısmet… önce kedilerin mama bütçesini toparlayalım. 😸</p>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl bg-gradient-to-br from-brand-100 to-white dark:from-brand-800/40 dark:to-ink-800/40 border border-black/5 shadow-soft"></div>
+          <div class="absolute -bottom-6 -right-6 w-40 h-40 rounded-3xl bg-brand-500/20 blur-2xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apps -->
+  <section id="apps" class="border-t border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <div class="flex items-end justify-between">
+        <h2 class="text-2xl md:text-3xl font-bold">Uygulamalar</h2>
+        <a class="text-sm text-brand-600 hover:underline" href="https://play.google.com/store/apps/developer?id=WhiskerSoft">Tümü →</a>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <!-- HesApp card -->
+        <article class="group rounded-3xl border border-black/5 p-6 bg-white dark:bg-ink-800/60 shadow-soft">
+          <div class="flex items-center gap-4">
+            <img src="https://raw.githubusercontent.com/whiskersoft/assets/main/icons/hesapp-512.png" alt="HesApp" class="w-14 h-14 rounded-2xl border border-black/10 bg-white object-cover" onerror="this.style.display='none'">
+            <div>
+              <h3 class="text-xl font-semibold">HesApp — Bütçe & Hesap</h3>
+              <p class="text-sm text-ink-500">Gelir-gider takibi, döviz/altın, yatırım araçları.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm">Hızlı, reklamsız deneyim odaklı. İhtiyacın olan hesaplayıcılar tek yerde.</p>
+          <div class="mt-5 flex gap-3">
+            <a href="https://play.google.com/store/apps/details?id=com.companyname.temettuhesaplayiciv2" class="px-4 py-2 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700">Google Play</a>
+            <a href="/privacy/hesapp.html" class="px-4 py-2 rounded-xl border border-black/10 text-sm font-semibold hover:bg-black/5">Gizlilik</a>
+          </div>
+        </article>
+        <!-- QiblaFinder card -->
+        <article class="group rounded-3xl border border-black/5 p-6 bg-white dark:bg-ink-800/60 shadow-soft">
+          <div class="flex items-center gap-4">
+            <img src="https://raw.githubusercontent.com/whiskersoft/assets/main/icons/qibla-512.png" alt="QiblaFinder" class="w-14 h-14 rounded-2xl border border-black/10 bg-white object-cover" onerror="this.style.display='none'">
+            <div>
+              <h3 class="text-xl font-semibold">QiblaFinder — Kıble Pusulası</h3>
+              <p class="text-sm text-ink-500">Kıble yönü, namaz vakitleri, günlük dua.</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm">Sade arayüz, doğru veriler. Gereksiz hiçbir şey yok, tam kararında bildirim.</p>
+          <div class="mt-5 flex gap-3">
+            <a href="#" class="px-4 py-2 rounded-xl bg-brand-600 text-white text-sm font-semibold hover:bg-brand-700">Yakında</a>
+            <a href="/privacy/qibla.html" class="px-4 py-2 rounded-xl border border-black/10 text-sm font-semibold hover:bg-black/5">Gizlilik</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="border-t border-black/5 bg-gradient-to-b from-white to-brand-50 dark:from-ink-900 dark:to-ink-800/40">
+    <div class="max-w-6xl mx-auto px-4 py-16">
+      <h2 class="text-2xl md:text-3xl font-bold">Neden WhiskerSoft?</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="rounded-3xl p-6 border border-black/5 bg-white dark:bg-ink-800/60">
+          <div class="text-3xl">⚡</div>
+          <h3 class="mt-3 font-semibold">Hız & Sadelik</h3>
+          <p class="mt-2 text-sm text-ink-600 dark:text-gray-300">Gereksiz ekran yok, uzun bekleme hiç yok.</p>
+        </div>
+        <div class="rounded-3xl p-6 border border-black/5 bg-white dark:bg-ink-800/60">
+          <div class="text-3xl">🔒</div>
+          <h3 class="mt-3 font-semibold">Gizlilik Önceliğimiz</h3>
+          <p class="mt-2 text-sm text-ink-600 dark:text-gray-300">Minimum izin, maksimum şeffaflık. Veriler cihazında.</p>
+        </div>
+        <div class="rounded-3xl p-6 border border-black/5 bg-white dark:bg-ink-800/60">
+          <div class="text-3xl">🛠️</div>
+          <h3 class="mt-3 font-semibold">Sürekli Gelişim</h3>
+          <p class="mt-2 text-sm text-ink-600 dark:text-gray-300">Kullanıcı geri bildirimiyle hızlı iterasyon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-2xl md:text-3xl font-bold">İletişim</h2>
+      <p class="mt-3 text-sm text-ink-600 dark:text-gray-300">Sorun mu var, fikir mi var? Yaz gitsin. Dönüş yapıyoruz.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-6">
+        <a class="rounded-2xl border border-black/10 p-5 hover:bg-black/5" href="mailto:whiskersoftstudio@gmail.com">📧 whiskersoftstudio@gmail.com</a>
+        <a class="rounded-2xl border border-black/10 p-5 hover:bg-black/5" href="https://t.me/whiskersoft" target="_blank" rel="noopener">💬 Telegram</a>
+        <a class="rounded-2xl border border-black/10 p-5 hover:bg-black/5" href="https://www.instagram.com/whiskersoft.studio/" target="_blank" rel="noopener">📸 Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy quick anchors -->
+  <section id="privacy" class="border-t border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-2xl md:text-3xl font-bold">Gizlilik</h2>
+      <p class="mt-4 text-sm text-ink-600 dark:text-gray-300">Açık kaynak metinler: Uygulama bazlı gizlilik sayfaları aşağıda.</p>
+      <ul class="mt-4 list-disc list-inside text-sm">
+        <li><a class="text-brand-600 hover:underline" href="/privacy/hesapp.html">HesApp Gizlilik Politikası</a></li>
+        <li><a class="text-brand-600 hover:underline" href="/privacy/qibla.html">QiblaFinder Gizlilik Politikası</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="border-t border-black/5">
+    <div class="max-w-6xl mx-auto px-4 py-10 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> WhiskerSoft. Tüm hakları saklıdır. 🐾</p>
+      <div class="flex gap-4">
+        <a href="/" class="hover:underline">Ana sayfa</a>
+        <a href="/privacy/hesapp.html" class="hover:underline">Gizlilik</a>
+        <a href="https://github.com/WhiskerSoft" class="hover:underline" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle (persists with localStorage)
+    const modeBtn = document.getElementById('mode');
+    const label = document.getElementById('modeLabel');
+    const root = document.documentElement;
+    const saved = localStorage.getItem('ws-theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+      label.textContent = '☀️';
+    }
+    modeBtn.addEventListener('click', () => {
+      root.classList.toggle('dark');
+      const isDark = root.classList.contains('dark');
+      localStorage.setItem('ws-theme', isDark ? 'dark' : 'light');
+      label.textContent = isDark ? '☀️' : '🌙';
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
