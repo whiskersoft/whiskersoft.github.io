@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QiblaFinder – Gizlilik Politikası | WhiskerSoft</title>
+  <meta name="description" content="QiblaFinder uygulamasının gizlilik politikası. Hangi verileri nasıl işlediğimizin şeffaf özeti." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans","Helvetica","Arial","sans-serif"] },
+          colors: {
+            brand: { 600:"#16a34a" },
+            ink: { 900:"#0B1120", 800:"#111827", 600:"#374151", 500:"#6b7280" }
+          },
+          boxShadow: { soft:"0 10px 30px -12px rgba(0,0,0,0.25)" }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+  <meta property="og:title" content="QiblaFinder – Gizlilik Politikası" />
+  <meta property="og:description" content="QiblaFinder'ın topladığı/veri işlediği alanlar ve kullanıcı hakları." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://whiskersoft.github.io/privacy/qibla.html" />
+</head>
+<body class="bg-white text-ink-800 dark:bg-ink-900 dark:text-white">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-ink-900/60 border-b border-black/5">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-green-600 flex items-center justify-center text-white font-extrabold shadow-soft">W</div>
+        <span class="font-bold tracking-tight">WhiskerSoft</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#apps" class="hover:text-green-600">Uygulamalar</a>
+        <a href="/#privacy" class="hover:text-green-600">Gizlilik</a>
+      </nav>
+      <button id="mode" class="px-3 py-2 text-sm rounded-xl border border-black/10 hover:bg-black/5" title="Tema">
+        <span id="modeLabel">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <nav class="text-sm text-ink-500 dark:text-gray-300">
+      <a class="hover:underline" href="/">Ana sayfa</a> <span class="mx-1">/</span>
+      <a class="hover:underline" href="/#privacy">Gizlilik</a> <span class="mx-1">/</span>
+      <span>QiblaFinder</span>
+    </nav>
+
+    <h1 class="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">QiblaFinder – Gizlilik Politikası</h1>
+    <p class="mt-2 text-sm text-ink-500 dark:text-gray-300">
+      Son güncelleme: <strong>18 Eylül 2025</strong> · Yayıncı: <strong>WhiskerSoft</strong> ·
+      İletişim: <a class="text-green-600 hover:underline" href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a>
+    </p>
+    <hr class="my-6 border-black/10">
+
+    <div class="prose prose-sm md:prose base:prose-headings:font-semibold dark:prose-invert max-w-none">
+      <p>Bu Gizlilik Politikası, QiblaFinder uygulamasının (“Uygulama”) hangi verileri nasıl işlediğini açıklar. Uygulama; kıble yönü, namaz vakitleri ve sesli Kur’an gibi temel işlevleri sunmak için bazı cihaz verilerine erişir. Doğrudan kişisel olarak tanımlanabilir bilgi (ad, e-posta, telefon vb.) toplamayız.</p>
+
+      <h2>Topladığımız / İşlediğimiz Veriler</h2>
+      <p><strong>Konum (yaklaşık/kesin):</strong> Kıble yönünü hesaplamak ve (isteğe bağlı) namaz vakitlerini göstermek için cihaz konumunu kullanırız. Konum cihaz üzerinde işlenir. Namaz vakitleri alınırken enlem/boylam bilgisi Aladhan servislerine gönderilebilir. Bu veriler kimliğinizle ilişkilendirilmez ve tarafımızca saklanmaz. Arka planda konum toplamıyoruz.</p>
+
+      <p><strong>Cihaz sensörleri (pusula/manyetometre, ivmeölçer, jiroskop):</strong> Kıble okunun doğru çalışması için anlık kullanılır; dış sistemlere aktarılmaz, tarafımızca kaydedilmez.</p>
+
+      <p><strong>Ağ erişimi ve üçüncü taraf içerik:</strong> Sesli Kur’an için MP3 dosyaları GitHub (githubusercontent.com) üzerinden akışla çekilir. Bu isteklerde IP adresiniz ve istemci bilgisi ilgili sunucu tarafından standart olarak görülebilir. Uygulama kendi tarafında ek izleme/analitik yapmaz.</p>
+
+      <p><strong>Yerel depolama / önbellek:</strong> Ses dosyaları oynatma performansı için cihazınızda önbelleğe alınabilir (veya tercihinizle çevrimdışı dinleme için indirilebilir). Bu dosyalar uygulama alanında tutulur; istediğinizde silebilirsiniz.</p>
+
+      <p><strong>Bildirimler:</strong> Namaz vakti hatırlatmaları ve diğer uyarılar için yerel bildirimler planlanır. İstediğiniz zaman kapatabilirsiniz.</p>
+
+      <p><strong>Reklam kimliği ve teknik veriler (Google AdMob):</strong> Reklam sunumu, sıklık sınırlama, dolandırıcılık önleme ve performans ölçümü için reklam kimliği (AAID/IDFA), cihaz/OS bilgisi, dil ve IP üzerinden yaklaşık konum Google AdMob ve reklam iş ortaklarınca işlenebilir. Bu verileri biz depolamayız.</p>
+
+      <h2>Verileri Kullanım Amaçlarımız</h2>
+      <ul>
+        <li>Kıble yönünü göstermek (konum + sensörler).</li>
+        <li>Namaz vakitlerini görüntülemek (konum → Aladhan).</li>
+        <li>Sesli Kur’an’ı akış veya önbellek yoluyla oynatmak.</li>
+        <li>Uygulama içi reklamları sunmak ve ölçümlemek (AdMob).</li>
+        <li>Bildirimler ve yerel hatırlatmalar sağlamak.</li>
+      </ul>
+
+      <h2>Üçüncü Taraflarla Paylaşım</h2>
+      <p>Doğrudan topladığımız herhangi bir kişisel veriyi satmayız veya bağımsız üçüncü taraflarla paylaşmayız. Hizmetin sunumu kapsamında; Aladhan (namaz vakitleri), GitHub (ses/veri barındırma) ve Google AdMob (reklam) tarafına işlev gereği veri iletilebilir. Bu tarafların verileri işleme biçimleri, kendi gizlilik politikalarına tabidir.</p>
+
+      <h2>Hukuki Dayanak ve Rıza</h2>
+      <ul>
+        <li>Konum ve sensör verisi, hizmetin ifası / meşru menfaat kapsamında işlenir.</li>
+        <li>Kişiselleştirilmiş reklamlar için bölgesel gerekliliklere göre rıza alınır (ör. AB/AEA için Google UMP). Rızayı reddederseniz kişiselleştirilmemiş reklamlar gösterilebilir veya reklamlar sınırlandırılabilir.</li>
+      </ul>
+
+      <h2>Saklama Süreleri</h2>
+      <ul>
+        <li>Konum ve sensör verileri tarafımızca saklanmaz; cihaz üzerinde anlık işlenir.</li>
+        <li>Ses önbelleği/indirilen dosyalar cihazınızda kalır; uygulama içinden veya cihaz ayarlarından silebilirsiniz. Uygulamayı kaldırdığınızda bu veriler de kaldırılır.</li>
+        <li>Reklam verileri, Google/AdMob tarafından kendi saklama politikalarına göre tutulabilir.</li>
+      </ul>
+
+      <h2>Kullanıcı Seçenekleri ve Hakları</h2>
+      <ul>
+        <li>Konum iznini cihaz ayarlarından açıp kapatabilirsiniz; izin kapalıyken kıble/konuma dayalı özellikler çalışmayabilir.</li>
+        <li>Reklam kişiselleştirmesini kapatabilir ve reklam kimliğinizi sıfırlayabilirsiniz.</li>
+        <li>(AB/AEA) UMP onay ekranından rıza tercihlerinizi yönetebilirsiniz.</li>
+        <li>KVKK/GDPR kapsamındaki erişim, düzeltme, kısıtlama, silme, itiraz ve rızayı geri çekme talepleriniz için bize e-posta gönderebilirsiniz: <a href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a>.</li>
+      </ul>
+
+      <h2>Çocukların Gizliliği</h2>
+      <p>Uygulama 13 yaş altına yönelik değildir ve “Ailelere Uygun” hedeflemesi yapılmaz.</p>
+
+      <h2>Güvenlik ve İzinler</h2>
+      <p>Uygulama yalnızca ilgili özelliği sağlamak için gerekli izinleri ister; izin vermemeyi seçerseniz ilgili özellik sınırlı çalışabilir.</p>
+      <p><strong>Zorunlu/işlevsel izinler:</strong></p>
+      <ul>
+        <li>ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION – kıble/namaz vakitleri için konum.</li>
+        <li>INTERNET / ACCESS_NETWORK_STATE – API istekleri ve ses akışı.</li>
+        <li>POST_NOTIFICATIONS (Android 13+) – yerel bildirimler için.</li>
+      </ul>
+      <p><strong>Arka plan/teslim güvenilirliği ile ilgili izinler (kişisel veri toplamaz):</strong></p>
+      <ul>
+        <li>SCHEDULE_EXACT_ALARM – bildirimlerin tam dakikasında iletilmesi için.</li>
+        <li>RECEIVE_BOOT_COMPLETED – yeniden başlatmada planları kurmak için.</li>
+        <li>WAKE_LOCK – alarm anında cihazı kısa süre uyandırmak için.</li>
+        <li>FOREGROUND_SERVICE – uzun süreçler/ses oynatma sırasında.</li>
+        <li>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS (opsiyonel) – bazı cihazlarda bildirim gecikmelerini azaltmak için yönlendirme.</li>
+      </ul>
+      <p><em>Not:</em> Sensör erişimleri genellikle OS seviyesinde ayrı izin gerektirmez ve yalnızca cihaz üzerinde kullanılır.</p>
+
+      <h2>Arka Planda Çalışma, Alarm ve Yeniden Başlatma</h2>
+      <ul>
+        <li><strong>Tam zamanlı alarm (SCHEDULE_EXACT_ALARM):</strong> Bildirimlerin belirli dakikada çalması için sistemden yetki istenir.</li>
+        <li><strong>Yeniden başlatma sonrası planlama (RECEIVE_BOOT_COMPLETED):</strong> Cihaz yeniden başladığında hatırlatmalar yeniden kurulur.</li>
+        <li><strong>WAKE_LOCK:</strong> Alarm anında bildirim sunabilmek için kısa süreli “uyanık kalma” kilidi.</li>
+        <li><strong>Ön-plan servisleri (FOREGROUND_SERVICE):</strong> Uzun işlemler/ses oynatma için bildirimli servis.</li>
+        <li><strong>Pil optimizasyonu istisnası:</strong> Gerektiğinde ilgili sistem ekranına yönlendirme yapılabilir.</li>
+      </ul>
+      <p>Bu işlemler kişisel veri toplamaz; yalnızca bildirimin zamanında gösterilmesini sağlar.</p>
+
+      <h2>Tanılama / Çökme Kayıtları</h2>
+      <p>Uygulama içinde ek analitik toplamıyoruz. Google Play/mağaza sağlayıcısı, çökme ve kararlılık istatistiklerini anonim olarak sunabilir; bu veriler uygulama sahibi tarafından ham kullanıcı kimliğiyle ilişkilendirilmez.</p>
+
+      <h2>Üçüncü Taraf Bağlantıları</h2>
+      <p>Reklamlar veya bağlantılar sizi üçüncü taraf sitelere yönlendirebilir. Bu sitelerin içerik ve gizlilik uygulamalarından sorumlu değiliz; ilgili politikaları incelemenizi öneririz.</p>
+
+      <h2>Değişiklikler</h2>
+      <p>Bu politika zaman zaman güncellenebilir. Değişiklikleri uygulama içinden veya mağaza sayfamızdan duyururuz; güncellenmiş politika yayımlandığında yürürlüğe girer.</p>
+
+      <h2>İletişim</h2>
+      <p>Gizlilikle ilgili her türlü soru ve talep için: <a href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a></p>
+      <p class="text-ink-500 dark:text-gray-400 text-sm">Not: Google AdMob, GitHub (githubusercontent.com) ve Aladhan gibi üçüncü tarafların veri işleme süreçleri kendi gizlilik politikalarına tabidir. Uygulama bu verileri doğrudan erişip depolamaz; yalnızca hizmetin gerektirdiği ölçüde iletir.</p>
+    </div>
+
+    <div class="mt-10">
+      <a href="/#privacy" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5">← Gizlilik ana sayfasına dön</a>
+    </div>
+  </main>
+
+  <footer class="border-t border-black/5">
+    <div class="max-w-4xl mx-auto px-4 py-10 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> WhiskerSoft. Tüm hakları saklıdır. 🐾</p>
+      <div class="flex gap-4">
+        <a href="/" class="hover:underline">Ana sayfa</a>
+        <a href="/privacy/hesapp.html" class="hover:underline">HesApp Gizlilik</a>
+        <a href="https://github.com/WhiskerSoft" class="hover:underline" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle (same davranış)
+    const root = document.documentElement;
+    const label = document.getElementById('modeLabel');
+    const saved = localStorage.getItem('ws-theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark'); label.textContent = '☀️';
+    }
+    document.getElementById('mode').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      const isDark = root.classList.contains('dark');
+      localStorage.setItem('ws-theme', isDark ? 'dark' : 'light');
+      label.textContent = isDark ? '☀️' : '🌙';
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
