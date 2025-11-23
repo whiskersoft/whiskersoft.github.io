@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>QiblaFinder – Gizlilik Politikası | WhiskerSoft</title>
-  <meta name="description" content="QiblaFinder uygulamasının gizlilik politikası. Kıble, namaz vakitleri, sesli Kur’an, reklam ve aboneliklere dair şeffaf özet." />
+  <meta name="description" content="QiblaFinder uygulamasının gizlilik politikası. Kıble, namaz vakitleri, sesli Kur’an, reklam ve aboneliklere dair şeffaf açıklama." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,12 +13,16 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans","Helvetica","Arial","sans-serif"] },
+          fontFamily: {
+            sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans","Helvetica","Arial","sans-serif"]
+          },
           colors: {
             brand: { 600:"#16a34a" },
             ink: { 900:"#0B1120", 800:"#111827", 600:"#374151", 500:"#6b7280" }
           },
-          boxShadow: { soft:"0 10px 30px -12px rgba(0,0,0,0.25)" }
+          boxShadow: {
+            soft:"0 10px 30px -12px rgba(0,0,0,0.25)"
+          }
         }
       },
       darkMode: 'class'
@@ -55,12 +59,14 @@
 
     <h1 class="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">QiblaFinder – Gizlilik Politikası</h1>
     <p class="mt-2 text-sm text-ink-500 dark:text-gray-300">
-      Son güncelleme: <strong>23 Kasım 2025</strong> · Yayıncı: <strong>WhiskerSoft</strong> ·
-      İletişim: <a class="text-green-600 hover:underline" href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a>
+      Son güncelleme: <strong>23 Kasım 2025</strong> · Yayıncı:
+      <strong>WhiskerSoft</strong> ·
+      İletişim:
+      <a class="text-green-600 hover:underline" href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a>
     </p>
     <hr class="my-6 border-black/10">
 
-    <div class="prose prose-sm md:prose base:prose-headings:font-semibold dark:prose-invert max-w-none">
+    <div class="prose prose-sm md:prose-base prose-headings:font-semibold dark:prose-invert max-w-none">
       <h2>Gizlilik Politikası</h2>
       <p>
         Bu Gizlilik Politikası, QiblaFinder uygulamasının (“Uygulama”) hangi verileri nasıl işlediğini açıklar.
@@ -70,11 +76,24 @@
 
       <h2>Topladığımız / İşlediğimiz Veriler</h2>
 
-      <p><strong>Konum (yaklaşık/kesin):</strong> Kıble yönünü hesaplamak ve (isteğe bağlı) namaz vakitlerini göstermek için cihaz konumunu kullanırız. Konum verisi cihaz üzerinde işlenir. Namaz vakitleri alınırken sadece enlem/boylam bilgisi anonim olarak Aladhan servislerine gönderilebilir. Bu veriler kimliğinizle ilişkilendirilmez, tarafımızca saklanmaz ve arka planda (uygulama kapalıyken) izlenmez.</p>
+      <p>
+        <strong>Konum (yaklaşık/kesin):</strong>
+        Kıble yönünü hesaplamak ve (isteğe bağlı) namaz vakitlerini göstermek için cihaz konumunu kullanırız.
+        Konum verisi öncelikle cihaz üzerinde işlenir.
+        Namaz vakitleri alınırken yalnızca enlem/boylam bilgisi anonim olarak Aladhan servislerine gönderilir.
+        Ayrıca yaklaşık konum, reklam sunumu, ölçümü, sıklık sınırlama, sahtekarlık önleme ve yasal uyumluluk amacıyla
+        Google AdMob ve onun iş ortakları tarafından da işlenebilir.
+        Bu veriler kimliğinizle ilişkilendirilmez, tarafımızca saklanmaz ve uygulama kapalıyken arka planda izleme yapılmaz.
+      </p>
 
-      <p><strong>Cihaz sensörleri (pusula, ivmeölçer, jiroskop):</strong> Kıble okunun doğru çalışması için anlık kullanılır; dış sistemlere aktarılmaz, tarafımızca kaydedilmez.</p>
+      <p>
+        <strong>Cihaz sensörleri (pusula, ivmeölçer, jiroskop):</strong>
+        Kıble okunun doğru çalışması ve yön stabilitesini sağlamak için anlık kullanılır; dış sistemlere aktarılmaz,
+        tarafımızca kaydedilmez.
+      </p>
 
-      <p><strong>Ağ erişimi ve üçüncü taraf içerik:</strong>
+      <p>
+        <strong>Ağ erişimi ve üçüncü taraf içerik:</strong>
         Sesli Kur’an için MP3 dosyaları VerseByVerseQuran / EveryAyah
         (<a href="https://www.versebyversequran.com" target="_blank" rel="noopener">versebyversequran.com</a>,
         <a href="https://everyayah.com" target="_blank" rel="noopener">everyayah.com</a>) üzerinden akışla çekilir.
@@ -83,22 +102,43 @@
         Uygulama kendi tarafında ek izleme/analitik yapmaz.
       </p>
 
-      <p><strong>Ödemeler ve abonelikler:</strong> Uygulama içinde sunulan Premium özellikler, bağış veya abonelik işlemleri Google Play Ödeme Sistemi (Google Play Billing) üzerinden gerçekleştirilir. Kredi kartı bilgileriniz, ödeme geçmişiniz veya finansal verileriniz tarafımızca görülmez, işlenmez ve depolanmaz. Tüm ödeme işlemleri Google’ın güvenlik standartlarına tabidir.</p>
+      <p>
+        <strong>Ödemeler ve abonelikler:</strong>
+        Uygulama içinde sunulan Premium özellikler, bağış veya abonelik işlemleri Google Play Ödeme Sistemi
+        (Google Play Billing) üzerinden gerçekleştirilir.
+        Kredi kartı bilgileriniz, detaylı ödeme geçmişiniz veya finansal verileriniz tarafımızca görülmez, işlenmez
+        ve depolanmaz. Tüm ödeme işlemleri Google’ın güvenlik ve gizlilik standartlarına tabidir.
+      </p>
 
-      <p><strong>Yerel depolama / önbellek:</strong> Ses dosyaları performans için cihazınızda önbelleğe alınabilir. Bu dosyalar uygulama alanında tutulur; istediğinizde silebilirsiniz.</p>
+      <p>
+        <strong>Yerel depolama / önbellek:</strong>
+        Ses dosyaları ve bazı içerikler performans için cihazınızda önbelleğe alınabilir.
+        Bu dosyalar uygulama alanında tutulur; uygulamayı kaldırarak veya cihaz ayarlarından temizleyebilirsiniz.
+      </p>
 
-      <p><strong>Bildirimler:</strong> Namaz vakti hatırlatmaları ve diğer uyarılar için yerel bildirimler planlanır. Bu bildirimler sesli veya titreşimli olabilir. İstediğiniz zaman kapatabilirsiniz.</p>
+      <p>
+        <strong>Bildirimler:</strong>
+        Namaz vakti hatırlatmaları ve diğer uyarılar için yerel bildirimler planlanır.
+        Bu bildirimler sesli veya titreşimli olabilir. İstediğiniz zaman uygulama içinden veya cihaz ayarlarından
+        kapatabilirsiniz.
+      </p>
 
-      <p><strong>Reklam kimliği ve teknik veriler (Google AdMob):</strong> Reklam sunumu, sıklık sınırlama ve dolandırıcılık önleme için reklam kimliği (AAID), cihaz bilgisi ve IP üzerinden yaklaşık konum Google AdMob tarafından işlenebilir.</p>
+      <p>
+        <strong>Reklam kimliği ve teknik veriler (Google AdMob):</strong>
+        Reklam sunumu, sıklık sınırlama, dolandırıcılık/sahtekarlık önleme ve yasal uyumluluk için reklam kimliği (AAID),
+        cihaz modeli, işletim sistemi sürümü, IP adresi üzerinden yaklaşık konum ve benzeri teknik veriler
+        Google AdMob ve onun reklam ortakları tarafından işlenebilir.
+      </p>
 
       <h2>Verileri Kullanım Amaçlarımız</h2>
       <ul>
         <li>Kıble yönünü göstermek (konum + sensörler).</li>
         <li>Namaz vakitlerini görüntülemek (konum → Aladhan API).</li>
         <li>Sesli Kur’an’ı akış veya önbellek yoluyla oynatmak.</li>
-        <li>Uygulama içi reklamları sunmak (AdMob).</li>
+        <li>Uygulama içi reklamları sunmak, ölçmek ve iyileştirmek (Google AdMob).</li>
         <li>Premium özellikleri etkinleştirmek ve satın alımları yönetmek (Google Play Billing).</li>
         <li>Bildirimler ve yerel hatırlatmalar sağlamak.</li>
+        <li>Sahtekarlığı önlemek, güvenliği artırmak ve yasal gerekliliklere uyumu sağlamak.</li>
       </ul>
 
       <h2>Üçüncü Taraflarla Paylaşım</h2>
@@ -107,8 +147,8 @@
         <li><strong>Aladhan:</strong> Namaz vakti hesaplaması için koordinat verisi.</li>
         <li><strong>VerseByVerseQuran / EveryAyah:</strong> Sesli Kur’an MP3 akışı ve zamanlama dosyaları.</li>
         <li><strong>GitHub:</strong> Kur’an metni ve diğer JSON / veri dosyalarının barındırılması.</li>
-        <li><strong>Google AdMob:</strong> Reklam gösterimi ve ölçümü.</li>
-        <li><strong>Google Play (Billing):</strong> Ödeme ve abonelik işlemlerinin güvenli yönetimi.</li>
+        <li><strong>Google AdMob:</strong> Reklam gösterimi, ölçümü, sıklık sınırlama, sahtekarlık önleme ve yasal uyumluluk.</li>
+        <li><strong>Google Play (Billing):</strong> Ödeme ve abonelik işlemlerinin güvenli yönetimi ve satın alma durumunun doğrulanması.</li>
       </ul>
       <p>Bu tarafların verileri işleme biçimleri, kendi gizlilik politikalarına tabidir.</p>
 
@@ -116,7 +156,7 @@
       <ul>
         <li>
           Sesli Kur’an kıraatleri: © VerseByVerseQuran.com / EveryAyah.com –
-          zamanlama dosyaları için sağlanan koşullara (site bağlantısı verme vb.) uygun olarak kullanılmaktadır.
+          zamanlama dosyaları ve sesler, ilgili siteler tarafından sağlanan koşullara uygun olarak kullanılmaktadır.
         </li>
         <li>
           Kur’an metni ve sure/ayet verileri: MIT lisanslı açık kaynak proje
@@ -127,7 +167,7 @@
       <h2>Hukuki Dayanak ve Rıza</h2>
       <ul>
         <li>Konum ve sensör verisi, hizmetin ifası kapsamında işlenir.</li>
-        <li>Ödeme işlemleri, kullanıcı talebi üzerine sözleşmenin ifası kapsamında Google üzerinden yürütülür.</li>
+        <li>Ödeme işlemleri, kullanıcı talebi üzerine sözleşmenin ifası kapsamında Google Play üzerinden yürütülür.</li>
         <li>Kişiselleştirilmiş reklamlar için bölgesel gerekliliklere (ör. AB/AEA için GDPR) göre rıza alınır (Google UMP).</li>
       </ul>
 
@@ -143,14 +183,16 @@
         <li>Konum iznini cihaz ayarlarından yönetebilirsiniz; kapattığınızda kıble ve konuma dayalı özellikler çalışmayabilir.</li>
         <li>Reklam kişiselleştirmesini kapatabilir veya reklam kimliğinizi sıfırlayabilirsiniz.</li>
         <li>Aboneliklerinizi Google Play Store “Abonelikler” menüsünden yönetebilir veya iptal edebilirsiniz.</li>
-        <li>KVKK / GDPR kapsamındaki talepleriniz (erişim, düzeltme, silme, kısıtlama, itiraz, rızayı geri çekme) için bize e-posta gönderebilirsiniz: <a href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a></li>
+        <li>KVKK / GDPR kapsamındaki talepleriniz (erişim, düzeltme, silme, kısıtlama, itiraz, rızayı geri çekme) için bize e-posta gönderebilirsiniz:
+          <a href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a>
+        </li>
       </ul>
 
       <h2>Çocukların Gizliliği</h2>
       <p>Uygulama 13 yaş altına özel olarak hedeflenmemiştir ve çocuklara yönelik bir profil çıkarma faaliyeti yürütmeyiz.</p>
 
       <h2>Güvenlik ve İzinler</h2>
-      <p>Uygulama, manifest dosyasında belirtilen ve yalnızca özelliklerin çalışması için gerekli izinleri kullanır.</p>
+      <p>Uygulama, manifest dosyasında belirtilen ve yalnızca özelliklerin çalışması için gerekli izinleri kullanır. Tüm veri transferleri mümkün olan yerlerde güvenli bağlantılar (SSL/HTTPS) üzerinden gerçekleştirilir.</p>
 
       <p><strong>İşlevsel izinler:</strong></p>
       <ul>
@@ -172,11 +214,16 @@
       <p>Bu politika zaman zaman güncellenebilir. Değişiklikler uygulama içinden veya mağaza sayfasından duyurulur; güncellenmiş sürüm yayımlandığı anda yürürlüğe girer.</p>
 
       <h2>İletişim</h2>
-      <p>Gizlilikle ilgili her türlü soru ve talep için bizimle iletişime geçebilirsiniz: <a href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a></p>
+      <p>
+        Gizlilikle ilgili her türlü soru ve talep için bizimle iletişime geçebilirsiniz:
+        <a href="mailto:edip.cag@outlook.com.tr">edip.cag@outlook.com.tr</a>
+      </p>
     </div>
 
     <div class="mt-10">
-      <a href="/#privacy" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5">← Gizlilik ana sayfasına dön</a>
+      <a href="/#privacy" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5">
+        ← Gizlilik ana sayfasına dön
+      </a>
     </div>
   </main>
 
@@ -197,7 +244,8 @@
     const label = document.getElementById('modeLabel');
     const saved = localStorage.getItem('ws-theme');
     if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      root.classList.add('dark'); label.textContent = '☀️';
+      root.classList.add('dark');
+      label.textContent = '☀️';
     }
     document.getElementById('mode').addEventListener('click', () => {
       root.classList.toggle('dark');
